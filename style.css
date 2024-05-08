@@ -7,210 +7,186 @@
     font-family: "Roboto", sans-serif;
 }
 
-html {
+body{
+    width: 100%;
     height: 100%;
+    background: linear-gradient(to bottom, #CFCFCF, #FFECE1, #FF914D);
 }
 
-body {
-    background-image: linear-gradient(to bottom, #CFCFCF, #FFECE1, #FF914D);
+header img{
+    width: 200px;
 }
 
-header {
-    filter: drop-shadow(0 0 8rem rgb(0, 0, 0));
-    margin-left: 20px;
-    margin-top: 20px;
+header{
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 15px;
 }
 
-.logo{
-    width: 220px;
-    height: 90px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.div{
-    display: inline-block;
-    width: 50%;
+footer{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
 }
 
 .container{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container .content {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: baseline;
-    align-content: center;
-    margin-left: 300px;
+    position: relative;
 }
 
-.container .carrosel{
-    width: 300px;
-    height: 600px;
-    background-color: aqua;
-    border: 1px solid black;
-    margin-left: 30px;
+.container .content .TextoBT{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 99px;
+    /* margin-left: 500px; */
+    gap: 15px;
 }
 
-.container .texto{
-    width: 700px;
-    height: 200px;
+.TextoBT .texto{
+    max-width: 600px;
     text-align: right;
-    margin-left: 305px; 
 }
 
-.container .titulo{
+.TextoBT .texto h2{
     font-weight: 600;
-    font-style: normal;
-    font-size: 25px;
-}
-
-.container .escrita{
-    font-weight: 400;
     font-style: normal;
     font-size: 20px;
 }
 
-.container .button1{
+.TextoBT .texto h4{
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.botoes{
+    width: 100%;
+    height: 100%;
+    display: contents;
+    align-items: center;
+}
+
+.botoes .buttong{
     background-color: #FFFFFF;
     border: none;
-    color: black;
+    color: #000;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     border-radius: 90px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-    font-size: 10px;
-    margin-top: 60px;
-    margin-right: 335px;
+    margin-right: 350px;
     width: 365px;
     height: 55px;
 }
 
-.container .button1:hover{
-    background-color: #FF914D;
-    color: white;
+.botoes .buttong:hover{
+    background: #FF914D;
+    color: #FFFFFF;
 }
 
-.google{
+.botoes .buttong h1{
     font-weight: 300;
     font-style: normal;
+    font-size: 20px;
 }
 
-.container .button2{
+.botoes .buttonx{
     background-color: #FFFFFF;
     border: none;
-    color: black;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 90px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);  
+    margin-right: 350px;
+    width: 365px;
+    height: 55px;
+}
+
+.botoes .buttonx:hover{
+    background: #FF914D;
+    color: #FFFFFF;
+}
+
+.botoes .buttonx h1{
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.botoes .buttonf{
+    background-color: #FFFFFF;
+    border: none;
+    color: #000;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     border-radius: 90px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-    font-weight: 100;
-    font-style: normal;
-    font-size: 10px;
-    margin-top: 25px;
-    margin-right: 335px;
+    margin-right: 350px;
     width: 365px;
     height: 55px;
 }
 
-.container .button2:hover{
-    background-color: #FF914D;
-    color: white;
+.botoes .buttonf:hover{
+    background: #FF914D;
+    color: #FFFFFF;
 }
 
-.x{
+.botoes .buttonf h1{
     font-weight: 300;
     font-style: normal;
+    font-size: 20px;
 }
 
-.container .button3{
+.botoes .buttonc{
     background-color: #FFFFFF;
     border: none;
-    color: black;
+    color: #000;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     border-radius: 90px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-    font-weight: 100;
-    font-style: normal;
-    font-size: 10px;
-    margin-top: 25px;
-    margin-right: 335px;
+    margin-right: 350px;
     width: 365px;
     height: 55px;
 }
 
-.container .button3:hover{
-    background-color: #FF914D;
-    color: white;
+.botoes .buttonc:hover{
+    background: #FF914D;
+    color: #FFFFFF;
 }
 
-.facebook{
+.botoes .buttonc h1{
     font-weight: 300;
     font-style: normal;
+    font-size: 20px;
 }
 
-.container .ou{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;  
-    font-size: 15px;
-    margin-top: 20px;
-    margin-right: 255px;
-}
-
-.container .button4{
-    background-color: #FFFFFF;
-    border: none;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 90px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-    font-weight: 100;
-    font-style: normal;
-    font-size: 10px;
-    margin-top: 20px;
-    margin-right: 335px;
-    width: 365px;
-    height: 55px;
-}
-
-.container .button4:hover{
-    background-color: #FF914D;
-    color: white;
-}
-
-.criar{
-    font-weight: 300;
-    font-style: normal;
-}
-
-.container .termos{
-    font-weight: 500;
-    font-style: normal;
-    font-size: 12px;
-    margin-top: 15px;
-    margin-right: 335px;
-    width: 345px;
-}
-
-.container .PC{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;  
-    font-size: 15px;
-    margin-top: 15px;
-    margin-right: 235px;
-}
-
-.container .button5{
+.botoes .buttone{
     background-color: #FFFFFF;
     border: none;
     color: #FF914D;
@@ -220,21 +196,41 @@ header {
     cursor: pointer;
     border-radius: 90px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-    font-weight: 100;
-    font-style: normal;
-    font-size: 10px;
-    margin-top: 20px;
-    margin-right: 335px;
+    margin-right: 350px;
     width: 365px;
     height: 55px;
 }
 
-.container .button5:hover{
-    background-color: #FF914D;
-    color: white;
+.botoes .buttone:hover{
+    background: #FF914D;
+    color: #FFFFFF;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
 }
 
-.entrar{
+.botoes .buttone h1{
     font-weight: 300;
     font-style: normal;
+    font-size: 20px;
+}
+
+.ou h2{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-right: 350px;
+}
+
+.PC h2{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-right: 350px;
+}
+
+.termos h2{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    width: 350px;
+    margin-right: 350px;
 }
