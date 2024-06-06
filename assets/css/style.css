@@ -91,7 +91,14 @@ header {
     color: white;
 }
 
-.google{
+.container .g{
+    position: absolute;
+    margin-top: 1px;
+    display: flex;
+    margin-left: 40px;
+}
+
+.container .google{
     font-weight: 300;
     font-style: normal;
 }
