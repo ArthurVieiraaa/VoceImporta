@@ -3,52 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="CoracaoLogo/png" href="./images/CoracaoLogo.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="CoracaoLogo/png" href="assets/images/CoracaoLogo.png">
 </head>
-<!-- LOGO -->
-<header>
-    <img class="logo" src="images/VoceImporta.png">
-</header>
 <body>
-
-    <div class="container">
-         <!-- Carrosel -->
-         <div class="carrosel">
-             <img src="" alt="">
-             <h1>Teste</h1>
-         </div>
-         <!-- Texto -->
-         <div class="texto">
-             <h2 class="titulo">O LUGAR PERFEITO PARA VOCÊ</h2>
-             <h4 class="escrita">O <span style="color: #FF914D;">Você Importa</span> além de ser seu refúgio é também a sua nova rede social que te ajuda a se conectar com novas pessoas, aonde você pode encontrar uma comunidade acolhedora que irá mudar sua <span style="color: #FF914D;">forma de enxergar o mundo</span>!</h4>
-        <!-- Botão -->
-        <button class="button1">
-            <img class="g" src="images/g.png" width="21" height="20">
-            <h1 class="google">Faça o login com o Google</h1>
-        </button>
-        <button class="button2">
-            <h1 class="x">Faça o login com o X</h1>
-        </button>
-        <button class="button3">
-            <h1 class="facebook">Faça o login com o Facebook</h1>
-        </button>
-        <div class="ou">
-           <h2 class="ou">Ou</h2> 
+    <!-- <div class="preloading" id="preloading">
+        <div class="loading" id="loading"></div>
+    </div> -->
+    <div class="main">
+        <div class="header">
+            <img src="assets/images/VoceImporta.png" alt="">
         </div>
-        <button class="button4">
-            <h1 class="criar">Crie sua conta</h1>
-        </button>
-        <div class="termos">
-            <h2 class="termos">Ao se inscrever, você concorda com os <span style="color: #1D9BF0;">Termos de Serviço e a Política de Privacidade</span>, incluindo o <span style="color: #1D9BF0;">Uso de Cookies.</span></h2> 
-         </div>
-         <div class="PC">
-            <h2 class="PC">Já tem conta?</h2> 
-         </div>
-         <button class="button5">
-            <h1 class="entrar">Entrar</h1>
-        </button>
+        <div class="container">    
+             <div class="content">
+                <div class="carrosel">
+                    <div class="carrosel-content">
+                        <img src="assets/images/" alt="">
+                    </div>
+                </div>
+                <div class="txtbts">
+                    <div class="texto">
+                        <h2>O LUGAR PERFEITO PARA VOCÊ</h2>
+                        <h4>O <span style="color: #FF914D;">Você Importa</span> além de ser seu refúgio é também a sua nova rede social que te ajuda a se conectar com novas pessoas, aonde você pode encontrar uma comunidade acolhedora que irá mudar sua <span style="color: #FF914D;">forma de enxergar o mundo</span>!</h4>
+                    </div>
+                    <div class="botoes">
+                        <button>
+                            <div class="btcontent">
+                                <img src="assets/images/g.png" alt="">
+                                <p>Faça o login com o Google</p>
+                            </div>
+                        </button>
+                        <button>
+                            <div class="btcontent">
+                                <img src="assets/images/g.png" alt="">
+                                <p>Faça o login com o X</p>
+                            </div>
+                        </button>
+                        <button>
+                            <div class="btcontent">
+                                <img src="assets/images/g.png" alt="">
+                                <p>Faça o login com o Facebook</p>
+                            </div>
+                        </button>
+                        <br>
+                        <p>Ou</p>
+                        <button id="open-modal" onclick="openModal()">
+                            <div class="btcontent">
+                                <p>Crie sua conta</p>
+                            </div>
+                        </button>
+                        <div id="fade" class="hide"></div>
+                        <div id="modal" class="hide">
+                            <div class="modal-header">
+                                <h2>Este é o modal</h2>
+                                <button id="close-modal">X</button>
+                            </div>
+                            <div class="modal-body">
+                                <h1>a</h1>
+                            </div>
+                        </div>
+
+                        <h2>Ao se inscrever, você concorda com os <span style="color: #1D9BF0;">Termos de Serviço e a Política de Privacidade</span>, incluindo o <span style="color: #1D9BF0;">Uso de Cookies.</span></h2>
+                        <br>
+                        <p>Já tem conta?</p>
+                        <button>
+                            <div class="btcontent">
+                                <p>Entrar</p>
+                            </div>
+                        </button>   
+                    </div>
+                </div>
+             </div>
+        </div>
     </div>
-    
+    <footer>
+        <h1>2024 © TODOS OS DIREITOS RESERVADOS</h1>
+    </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
