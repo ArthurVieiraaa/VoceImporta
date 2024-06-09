@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,823;1,823&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.grupos{
+    position: absolute;
+    margin-left: 1230px;
+    display: flex;
+    height: 100%;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: inset 5px 0 5px 0 rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.barra-pesquisa{
+    background-color: #ff914d;
+    border-radius: 50px;
+    padding: 10px 5px 12px 35px;
+    margin-top: 35px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.barra-pesquisa input{
+    background-color: #ff914d;
+    border-style: none;
+    outline: none;
+}
+
+.barra-pesquisa input::placeholder{
+    background-color: #ff914d;
+    border: none;
+    color: #000;
+}
+
+.frequentes{
+    margin-top: 50px;
+    padding: 8px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.comunidades{
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 15px 10px 5px 10px;
+}
+
+.comunidades i{
+    position: absolute;
+}
+
+.comunidades p{
+    margin-left: 25px;
+}
+
+.painel-amigos{
+    margin-top: 50px;
+    padding: 8px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.amigos{
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 15px 10px 5px 10px;
+}
+
+.amigos i{
+    position: absolute;
+}
+
+.amigos p{
+    margin-left: 25px;
+}
