@@ -43,6 +43,7 @@ footer h1{
     margin-left: 20px;
     margin-top: 20px;
     width: 230px;
+    transition: all 0.5s;
 }
 
 .border{
@@ -196,7 +197,7 @@ footer h1{
 }
 
 .carrosel-content img{
-    width: 95%;
+    width: 100%;
     height: auto;
     object-fit: cover;
     filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.6));
@@ -234,7 +235,6 @@ footer h1{
 .modal-header{
     display: flex;
     width: 100%;
-    margin-bottom: 10px;
 }
 
 .modal-header .logo{
@@ -242,7 +242,7 @@ footer h1{
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 .modal-header .logo img{
@@ -298,10 +298,10 @@ footer h1{
 }
 
 .modal-body-content h1{
-    font-size: 24px;
+    font-size: 22px;
     color: #000000;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -323,6 +323,7 @@ footer h1{
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
     border-radius: 50px;
     padding-left: 10px;
+    outline: none;
 }
 
 .modal-body-content .botao-avancar{
@@ -400,6 +401,14 @@ footer h1{
     font-style: normal;
 }
 
+.modal-body-content h1{
+    font-size: 22px;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 .modal-body-content .bt-logar-rs{
     width: 100%;
     height: 10%;
@@ -452,6 +461,210 @@ button.btcontentsg, button.btcontentsx, button.btcontentsf{
     cursor: pointer;
     background-color: #6a84bd;
     transition: all 0.5s;
+}
+
+@media (width < 1500px){
+    .header img{
+        width: 200px;
+        transition: all 0.5s;
+    }
+
+    .container{
+        width: 100%;
+        height: 100%;   
+    }
+
+    .texto{
+        width: 90%;
+        height: 15%;
+        text-align: right;  
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .texto h2{
+        font-size: 22px;
+        color: #000000;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    .texto h4{
+        font-size: 16px;
+        color: #000000;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .botoes{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .botoes button{
+        width: 330px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+    }
+
+    .botoes .btcontent i{
+        width: auto;
+        height: 10px;
+        margin-left: 10px;
+    }
+
+    .botoes .btcontent img{
+        width: 25px;
+        height: 25px;
+    }
+    
+    .botoes .btcontent p{
+        text-align: center;
+        justify-content: center;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+    }
+
+    .botoes p{
+        font-size: 14px;
+        color: #000000;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .carrosel-content img{
+        width: 95%;
+        height: auto;
+        object-fit: cover;
+        filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.6));
+    }
+
+}
+
+@media screen and (width < 1000px){
+    .header{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+    }
+    
+    .header img{
+        width: 180px;
+        display: flex;
+        transition: all 0.5s;
+        margin-bottom: 10px;
+    }
+
+    .container{
+        width: 100%;
+        height: 100%;  
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carrosel{
+        display: flex;
+        width: 80%;
+    }
+
+    .txtbts{
+        width: 80%;
+    }
+
+    .texto{
+        width: 100%;
+        height: 20%;
+        text-align: center;  
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .texto h2{
+        font-size: 18px;
+        color: #000000;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    .texto h4{
+        font-size: 12px;
+        color: #000000;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .botoes{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .botoes button{
+        width: 330px;
+        height: 45px;
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+    }
+
+    .botoes .btcontent i{
+        width: auto;
+        height: 10px;
+        margin-left: 10px;
+    }
+
+    .botoes .btcontent img{
+        width: 25px;
+        height: 25px;
+    }
+    
+    .botoes .btcontent p{
+        text-align: center;
+        justify-content: center;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+    }
+
+    .botoes p{
+        font-size: 14px;
+        color: #000000;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .carrosel-content img{
+        width: 95%;
+        height: auto;
+        object-fit: cover;
+        filter: drop-shadow(0 0 25px rgba(0, 0, 0, 0.6));
+    }
+
 }
 
 .preloading {
