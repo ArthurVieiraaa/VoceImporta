@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,823;1,823&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    background-color: #F4A65D;
+    
+}
+
+body {
+    background-color: white;
+    color: #333;
+}
+
+.border{
+    border: 1px solid red;
+}
+
+.border1{
+    border: 1px solid rgb(43, 255, 0);
+}
+
+.titulo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h1{
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    font-size: 55px;    
+    color: #1c1e21;
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+a{
+    font-family: "Karla", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.retangular-box{
+    
+    width: 100%;
+    height: auto    ;
+    background-color: #F4A65D;  
+    position: fixed;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.menu-hamburguer {
+    width: 50%;
+    height: 100%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.texto-pricipal{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    clip-path: circle(100px);
+    transition: 1s ease-out;
+}
+
+.nav-list a{
+    font-size: 18px;
+    color: #fff;
+    padding-block: 16px;
+}
+
+.hamburguer {
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+}
+
+/* estilos ativos */
+
+.nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+}
