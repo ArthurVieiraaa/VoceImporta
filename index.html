@@ -11,142 +11,35 @@
     <div class="preloading" id="preloading">
         <div class="loading" id="loading"></div>
     </div>
-    <div class="main">
-        <div class="header">
-            <img src="assets/images/VoceImporta.png" alt="">
-        </div>
-        <div class="container">    
-             <div class="content">
-                <div class="carrosel">
-                    <div class="carrosel-content">
-                        <img src="assets/images/Prototipos.png" alt="">
-                    </div>
-                </div>
-                <div class="txtbts">
-                    <div class="texto">
-                        <h2>O LUGAR PERFEITO PARA VOCÊ</h2>
-                        <h4>O <span style="color: #FF914D;">Você Importa</span> além de ser seu refúgio é também a sua nova rede social que te ajuda a se conectar com novas pessoas, aonde você pode encontrar uma comunidade acolhedora que irá mudar sua <span style="color: #FF914D;">forma de enxergar o mundo</span>!</h4>
-                    </div>
-                    <div class="botoes">
-                        <button>
-                            <div class="btcontent">
-                                <img src="assets/images/g.png" alt="">
-                                <p>Faça o login com o Google</p>
-                            </div>
-                        </button>
-                        <button>
-                            <div class="btcontent">
-                                <i class="fa-brands fa-x-twitter fa-2x"></i>
-                                <p>Faça o login com o X</p>
-                            </div>
-                        </button>
-                        <button>
-                            <div class="btcontent">
-                                <i class="fa-brands fa-facebook fa-2x" style="color: #3b5998;"></i>
-                                <p>Faça o login com o Facebook</p>
-                            </div>
-                        </button>
-                        <br>
-                        <p>Ou</p>
-                        <button id="open-modal-cadastro" onclick="openModalCadastro()">
-                            <div class="btcontent">
-                                <p>Crie sua conta</p>
-                            </div>
-                        </button>
-                        <div id="fade" class="hide"></div>
-                        <div id="modal" class="hide">
-                            <div class="modal-header">
-                                <div class="logo">
-                                <img src="assets/images/CoracaoLogo.png">
-                                </div>
-                                <div class="close-modal">
-                                <button class="botao-fechar-modal" id="close-modal-cadastro">X</button>
-                                </div>
-                            </div>
-                            <div class="modal-body">
-                                <div class="modal-body-content">
-                                    <h1>CADASTRO</h1>
-                                    <h2>Seu nome:</h2>
-                                    <input type="text" placeholder="Insira seu Nome..." required>
-                                    <h2>Seu e-mail:</h2>
-                                    <input type="text" placeholder="Insira seu E-mail...">
-                                    <h2>Telefone:</h2>
-                                    <input type="tel" placeholder="Insira seu Número...">
-                                    <h2>Senha:</h2>
-                                    <input type="password" placeholder="Defina sua Senha...">
-                                    <h2>Confirme sua senha:</h2>
-                                    <input type="password" placeholder="Confirme sua senha...">
-                                    <h2>Data de Nascimento:</h2>
-                                    <input type="date" style="padding: 10px 20px 10px 10px;">
-                                    <button class="botao-avancar">
-                                        <div class="bt-content">
-                                            <p>AVANÇAR</p>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
 
-                        <h2>Ao se inscrever, você concorda com os <span style="color: #1D9BF0;">Termos de Serviço e a Política de Privacidade</span>, incluindo o <span style="color: #1D9BF0;">Uso de Cookies.</span></h2>
-                        <br>
-                        <p>Já tem conta?</p>
-                        <button id="open-modal-entrar" onclick="openModalEntrar()">
-                            <div class="btcontent">
-                                <p>Entrar</p>
-                            </div>
-                        </button>
-                        <div>
-                            <div id="fadeEntrar" class="hide"></div>
-                            <div id="modalEntrar" class="hide">
-                                <div class="modal-header">
-                                    <div class="logo">
-                                    <img src="assets/images/CoracaoLogo.png">
-                                    </div>
-                                    <div class="close-modal">
-                                    <button class="botao-fechar-modal" id="close-modal-entrar">X</button>
-                                    </div>
-                                </div>
-                            <div class="modal-body">
-                                <div class="modal-body-content">
-                                    <h1>ENTRAR</h1>
-                                    <h2>Usúario:</h2>
-                                    <input type="text" placeholder="Insira seu Usúario..." required>
-                                    <h2>Senha:</h2>
-                                    <input type="password" placeholder="Defina sua Senha...">
-                                    <button class="botao-avancar">
-                                        <div class="bt-content">
-                                            <p>AVANÇAR</p>
-                                        </div>
-                                    </button>
-                                    <hr>
-                                    <p>Ou faça login com suas redes sociais</p>
-                                    <div class="bt-logar-rs">
-                                        <button class="btcontentsg">
-                                            <div class="botao-content">
-                                                <img src="assets/images/g.png">
-                                            </div>
-                                        </button>
-                                        <button class="btcontentsx">
-                                            <div class="botao-content">
-                                                <i class="fa-brands fa-x-twitter fa-2x" style="color: #fff;"></i>
-                                            </div>
-                                        </button>
-                                        <button class="btcontentsf">
-                                            <div class="botao-content">
-                                                <i class="fa-brands fa-facebook fa-2x" style="color: #fff;"></i>
-                                            </div>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <header id="header">
+        <div class="container">
+            <div class="flex">
+                <a href="index.html"><img src="assets/images/Logo.png" alt=""></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Ferramentas</a></li>
+                        <li><a href="#">Segurança</a></li>
+                        <li><a href="#">Preços</a></li>
+                        <li><a href="#">Comunidade</a></li>
+                    </ul>
+                </nav>
+
+                <div class="btn-insc">
+                    <a href="#"><button>Inscreva-se</button></a>
                 </div>
-             </div>
+
+            </div>
         </div>
-    </div>
+    </header>
+
+    <section class="container-principal">
+
+    </section>
+
     <footer>
-        <h1>2024 © TODOS OS DIREITOS RESERVADOS</h1>
+        
     </footer>
     <script src="assets/js/script.js"></script>
 </body>
