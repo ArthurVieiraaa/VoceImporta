@@ -7,3 +7,5 @@
 08/06/2024 - Finalinzando Index, Atualizando Página Comunidade. (HTML, CSS & JS)
 <br>
 09/06/2024 - Atualização da Página de Diretrizes. (HTML, CSS & JS)
+<br>
+12/06/2024 - Atualização do Index. (HTML, CSS & JS)
