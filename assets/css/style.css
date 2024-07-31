@@ -15,6 +15,64 @@
     border: 1px solid rgb(43, 255, 0);
 }
 
+.preloading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	animation: spinz 1.35s linear infinite;
+	width: 100%;
+	height: 100%;
+	background-color: #F6FBFD;
+	z-index: 100;
+}
+  
+.loading {
+	border: 16px solid #efeee8;
+	border-top: 16px solid #FF914D;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 1.35s linear infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -60px;
+	margin-left: -60px;
+}
+
+@keyframes spin {
+	0% {
+	  transform: rotate(0deg);
+	  opacity:1;
+	}
+	50% {
+	  transform: rotate(360deg);
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	  transform: rotate(180deg);
+	}
+	100% {
+	  transform: rotate(0deg);
+	  opacity:0;
+	}
+}
+  
+@keyframes spinz {
+	0% {
+	  opacity:1;
+	}
+	50% {
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	}
+	100% {
+	  opacity:0;
+    }
+}
 
 html{
     height: auto;
@@ -251,7 +309,7 @@ header ul li a:hover{
     height: 10px;
     position: absolute;
     top: 20px;
-    left: 15%;
+    left: 18%;
     background: #333;
     transform: translateX(50%);
     border-radius: 50%;
@@ -418,14 +476,24 @@ header ul li a:hover{
 
 footer{
     width: 100%;
-    color: #fff;
+    color: #FF914D;
 }
 
 #footer-content{
-    background-color: #000;
+    background-color: #fff;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 3rem 3.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 3.5rem;
+    gap: 1.5rem;
+}
+
+.footer-contacts{
+    display: flex;
+    flex-direction: center;
+    gap: 10px;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-contacts img{
@@ -436,6 +504,11 @@ footer{
 
 .footer-contacts h1{
     margin-bottom: 0.75rem;
+}
+
+.footer-contacts p{
+    color: #000;
+    font-size: 16px;
 }
 
 #footer-social-media{
@@ -460,69 +533,88 @@ footer{
 }
 
 #footer-social-media .footer-links:hover{
-    opacity: 0.8;
+    opacity: 0.6;
     transition: all 0.5s;
 }
 
 #github{
-    background: linear-gradient(to right, #8d8c8c, #aaaaaa, #c6c6c6);
+    background: linear-gradient(to right, #FF914D, #FFA167, #FFB180);
 }
 
 #linkedin{
-    background: linear-gradient(to right, #8d8c8c, #aaaaaa, #c6c6c6);
+    background: linear-gradient(to right, #FF914D, #FFA167, #FFB180);
+}
+
+.footer-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .footer-list{
     display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+    flex-direction: row;
+    gap: 1.75rem;
     list-style: none;
+    font-size: 20px;
 }
 
 .footer-list a{
-    color: #fff;
+    color: #FF914D;
     text-decoration: none;
     transition: all 0.5s;
 }
 
 .footer-list a:hover{
-    opacity: 1;
+    opacity: 0.5;
     transition: all 0.5s;
 }
 
 #footer-subscribe{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.5rem;
+    padding: 40px;
+}
+
+#footer-subscribe h3{
+    font-size: 20px;
 }
 
 #footer-subscribe p{
-    color: #fff;
+    color: #000;
+    font-size: 16px;
 }
 
 #input-group{
     display: flex;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #d8d8d8;
     background-color: 4px;
+    border-radius: 20px;
 }
 
 #input-group input{
     all: unset;
     padding: 0.75rem;
     width: 100%;
+    color: #000;
+    padding-left: 1.25rem;
 }
 
 #input-group button{
-    background-color: #7c7c7c;
+    background-color: #FF914D;
     border: none;
     color: #fff;
-    padding: 0px 1.25rem;
-    font-size: 1.125rem;
+    padding: 10px 1rem;
+    font-size: 20px;
     height: 100%;
     border-radius: 0px 4px 4px 0px;
     cursor: pointer;
     transition: all 0.5s;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 #input-group button:hover{
@@ -532,7 +624,7 @@ footer{
 
 #footer-copyright{
     color: #fff;
-    background-color: #000;
+    background-color: #FF914D;
     display: flex;
     align-items: center;
     justify-content: center;

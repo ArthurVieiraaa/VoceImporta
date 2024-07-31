@@ -15,13 +15,16 @@
     </script>
 </head>
 <body>
+    <div class="preloading" id="preloading">
+        <div class="loading" id="loading"></div>
+    </div>
     <header id="header">
         <div class="container">
             <div class="flex">
                 <a href="index.html"><img src="assets/images/Logo.png" alt=""></a>
                 <nav>
                     <ul>
-                        <li><a href="#">Ferramentas</a></li>
+                        <li><a href="ferramentas.html">Ferramentas</a></li>
                         <li><a href="#">Segurança</a></li>
                         <li><a href="#">Preços</a></li>
                         <li><a href="#">Comunidade</a></li>
@@ -66,7 +69,7 @@
             </div>
             <div class="texto-sec">
                 <div class="texto-sec-content">
-                    <h1>Acompanhe o feed da sua empresa em tempo real. </h1>
+                    <h1>Acompanhe o feed da sua <span style="color: #FF914D;">Instituição de Ensino</span> em tempo real. </h1>
                     <p>Assim como qualquer outra rede social, você pode postar, comentar, compartilhar ideias e pensamentos, curtir e compartilhar publicações. Nossa linha do tempo fornece atualizações de postagens em tempo real.</p>
                 </div>
             </div>
@@ -81,7 +84,7 @@
                     <br>
                     <h1>Crie um espaço de<br>compartilhamento de<br>conhecimento.</h1>
                     <br>
-                    <p>Você sabia que os colaboradores podem influenciar e aumentar os conhecimentos de sua empresa? Eles podem fazer isso publicando textos em comunidades, distribuídos por temas ou departamentos. Atualizações, ideias ou experiências: uma só comunidade com vários editores e assuntos diversos. Aqui, todos têm voz.</p>
+                    <p>Você sabia que os colaboradores podem influenciar e aumentar os conhecimentos de sua instituição? Eles podem fazer isso publicando textos em comunidades, distribuídos por temas ou departamentos. Atualizações, ideias ou experiências: uma só comunidade com vários editores e assuntos diversos. Aqui, todos têm voz.</p>
                 </div>
             </div>
             <div class="box-comunidade" data-aos="zoom-in">
@@ -95,16 +98,10 @@
     <footer>
         <div id="footer-content">
             <div class="footer-contacts">
-                <img src="assets/images/CoracaoLogoBranca.png">
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                <div id="footer-social-media">
-                    <a href="#" class="footer-links" id="github">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="#" class="footer-links" id="linkedin">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </div>
+                <img src="assets/images/CoracaoLogo.png">
+                <p>Somos uma equipe focada em desenvolver uma plataforma escolar para os colaboradores, pais, alunos e professores poderem interagir, denunciar algum tipo de abuso ou preconceito.</p>
+            </div>
+            <div class="footer-link">
                 <ul class="footer-list">
                     <li>
                         <a href="#"><h3>Ferramentas</h3></a>
@@ -119,18 +116,18 @@
                         <a href="#"><h3>Comunidade</h3></a>
                     </li>
                 </ul>
-                <div id="footer-subscribe">
-                    <h3>Inscrever-se</h3>
-                    <p>
-                        Insira seu e-mail para receber notificações 
-                        sobre novas atualizações
-                    </p>
-                    <div id="input-group">
-                        <input type="email" id="email">
-                        <button>
-                            <i class="Fa-regular fa-envelope"></i>
-                        </button>
-                    </div>
+            </div>
+            <div id="footer-subscribe">
+                <h3>Inscrever-se</h3>
+                <p>
+                    Insira seu e-mail para receber notificações 
+                    sobre novas atualizações
+                </p>
+                <div id="input-group">
+                    <input type="email" id="email" placeholder="Insira seu email...">
+                    <button>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
                 </div>
             </div>
         </div>
