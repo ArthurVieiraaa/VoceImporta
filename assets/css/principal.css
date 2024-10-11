@@ -7,15 +7,14 @@
     font-family: Arial, sans-serif;
 }
 
-.banner{
+.barra{
     display: flex;
-    height: 23vh;
+    position: static;
+    height: 8vh;
     background-color: #ff914d;
     border-radius: 0 0 10px 10px;
-    margin-left: 250px;
-    margin-right: 400px;
 }
-
+/*
 .perfil .perfil-image{
     position: absolute;
     margin-top: 17vh;
@@ -33,8 +32,8 @@
     position: absolute;
     margin-top: 140px;
     margin-left: 345px;
-}
-
+} */
+/* 
 .btn{
     background-color: #44a5ff;
     border-style: none;
@@ -42,7 +41,7 @@
     border-radius: 50px;
     margin-top: 145px;
     margin-left: 845px;
-}
+} */
 
 .conteudo{
     display: flex;
