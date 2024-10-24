@@ -14,7 +14,7 @@
     background-color: #ff914d;
     border-radius: 0 0 10px 10px;
 }
-/*
+
 .perfil .perfil-image{
     position: absolute;
     margin-top: 17vh;
@@ -32,8 +32,8 @@
     position: absolute;
     margin-top: 140px;
     margin-left: 345px;
-} */
-/* 
+} 
+
 .btn{
     background-color: #44a5ff;
     border-style: none;
@@ -41,13 +41,11 @@
     border-radius: 50px;
     margin-top: 145px;
     margin-left: 845px;
-} */
+}
 
 .conteudo{
     display: flex;
     margin-top: 100px;
-    margin-left: 250px;
-    margin-right: 300px;
     height: auto;
 }
 
@@ -85,4 +83,16 @@
 
 .qtde-coment{
     margin-left: 20px;
+}
+
+.pagina{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pagina div{
+    width: auto;
+    height: 100%;
 }
