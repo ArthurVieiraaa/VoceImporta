@@ -7,11 +7,9 @@
     font-family: Arial, sans-serif;
 }
 
-.div-barra{
-    height: 100vh;
-}
-
 .grupos{
+    position: fixed;
+    right: 0;
     display: flex; 
     background-color: #fff;
     box-shadow: inset 5px 0 5px 0 rgba(0, 0, 0, 0.1);

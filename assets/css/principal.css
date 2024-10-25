@@ -86,13 +86,10 @@
 }
 
 .pagina{
-    height: 100%;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
 }
 
 .pagina div{
     width: auto;
-    height: 100%;
 }
